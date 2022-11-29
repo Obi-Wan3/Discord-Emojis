@@ -6,7 +6,7 @@ if not os.path.isfile("./emojis.json"):
     print("No emojis.json file found!")
     sys.exit()
 
-with open("./emojis.json", "r") as f:
+with open("./emojis.json", "r", encoding="utf8") as f:
     data = json.load(f)
 
 all_emojis = []
